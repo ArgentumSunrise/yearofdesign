@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>365 Days of Design</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>A Year of Design</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/designs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tinder for Dribbble">
     <script src="https://use.fontawesome.com/25ba5b0c20.js"></script>
@@ -13,11 +14,13 @@
 <body>
     <div class="home-page">
         <nav class="nav-home">
-            <a id='home' class='underline'>HOME 
+            <a id='home' class='page underline'>HOME 
             </a>|
-            <a id='about' class='underline'> ABOUT</a>
+            <a id='about' class='page underline'> ABOUT</a>|
+            <a id='random' class='underline'> RANDOM</a>
             <div class='nav-right'>
                 <a href='http://twitter.com/ColterGiem' target='_blank'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href='mailto:coltergiem@gmail.com' target='_blank'><i class="fa fa-envelope" aria-hidden="true"></i></a>
                 <a href='http://github.com/ArgentumSunrise' target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
         </nav>
@@ -26,6 +29,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+
             var page = location.search.substring(1, 2000);
             if (page) {
                 $('.main').load('../partials/' + page + '.html');
@@ -33,7 +37,7 @@
                 $('.main').load('../partials/home.html');
             }
 
-            $('.nav-home a').click(function () {
+            $('.page').click(function () {
                 id = this.id;
                 $('.main').load('/partials/' + id + '.html').hide().fadeIn();
                 window.history.pushState("string", "Title", "/?" + id);
