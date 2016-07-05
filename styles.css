@@ -1,0 +1,140 @@
+@font-face {
+    src: url(./fonts/lato/Lato-Hairline.ttf);
+    font-family: Lato Hairline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-in-out;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Proxima Nova Soft', sans-serif;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "proxima-nova-soft";
+    line-height: 1.6em;
+}
+
+body {
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+a:hover {
+    color: #ff5c5c;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.home-page {
+    height: 100%;
+    width: 100%;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.nav-home {
+    height: 100px;
+    padding-top: 40px;
+    font-family: Lato Hairline;
+}
+
+.nav-home,
+.about {
+    color: #333;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 15px;
+    max-width: 800px;
+}
+
+.nav-home a {
+    margin: 10px;
+}
+
+.underline,
+.nav-home a {
+    position: relative;
+}
+
+.underline:before {
+    content: "";
+    position: absolute;
+    margin-top: 25px;
+    height: 0;
+    width: 90%;
+    transition: all 0.2s ease;
+}
+
+.underline:hover:before {
+    height: 1px;
+    background-color: #ff5c5c;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right a i {
+    margin: 3px;
+    font-size: 20px;
+}
+
+#header {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    color: #ff5c5c;
+    font-weight: 100;
+}
+
+#auth,
+.about p {
+    font-weight: 300;
+}
+
+#auth {
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.about h1 {
+    margin-top: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.main {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.main-page,
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
