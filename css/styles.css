@@ -191,3 +191,38 @@ img {
     max-width: 1000px;
     max-height: 50vh;
 }
+
+@media screen and (max-width: 800px) {
+    #header {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #auth {
+        font-size: 10px;
+        margin: 5px 0 30px 0;
+    }
+    .about p {
+        font-size: 15px;
+    }
+    .nav-home {
+        padding-top: 10px;
+    }
+    nav a {
+        font-size: 10px;
+        margin: 5px;
+    }
+    #nav-right a i {
+        font-size: 15px;
+    }
+    .design img {
+        max-width: 80vw;
+    }
+    .design {
+        width: 100vw;
+        padding: 30px 0 30px 0;
+        height: auto;
+    }
+    .design p {
+        display: none;
+    }
+}
