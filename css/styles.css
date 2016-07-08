@@ -7,6 +7,23 @@
     margin: 0;
     padding: 0;
     transition: all .3s ease-in-out;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    
+    -khtml-user-select: none;
+    /* Konqueror */
+    
+    -moz-user-select: none;
+    /* Firefox */
+    
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    
+    user-select: none;
+    cursor: default;
 }
 
 html,
@@ -150,19 +167,62 @@ img {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 55vh;
+    height: 65vh;
 }
 
-.design p {
+.design p,
+.design span {
     position: absolute;
     align-self: flex-start;
     padding: 30px 0 0 40px;
     left: 0;
+    margin-top: 0;
     font-weight: 800;
     font-size: 20px;
 }
 
+.design span {
+    padding-top: 10px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
 .design img {
     max-width: 1000px;
-    max-height: 40vh;
+    max-height: 50vh;
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #auth {
+        font-size: 10px;
+        margin: 5px 0 30px 0;
+    }
+    .about p {
+        font-size: 15px;
+    }
+    .nav-home {
+        padding-top: 10px;
+    }
+    nav a {
+        font-size: 10px;
+        margin: 5px;
+    }
+    #nav-right a i {
+        font-size: 15px;
+    }
+    .design img {
+        max-width: 80vw;
+    }
+    .design {
+        width: 100vw;
+        padding: 30px 0 30px 0;
+        height: auto;
+    }
+    .design p {
+        display: none;
+    }
 }
