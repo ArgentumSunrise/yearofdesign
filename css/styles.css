@@ -7,6 +7,23 @@
     margin: 0;
     padding: 0;
     transition: all .3s ease-in-out;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    
+    -khtml-user-select: none;
+    /* Konqueror */
+    
+    -moz-user-select: none;
+    /* Firefox */
+    
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    
+    user-select: none;
+    cursor: default;
 }
 
 html,
@@ -153,13 +170,21 @@ img {
     height: 55vh;
 }
 
-.design p {
+.design p,
+.design span {
     position: absolute;
     align-self: flex-start;
     padding: 30px 0 0 40px;
     left: 0;
+    margin-top: 0;
     font-weight: 800;
     font-size: 20px;
+}
+
+.design span {
+    padding-top: 10px;
+    font-weight: 300;
+    white-space: nowrap;
 }
 
 .design img {
