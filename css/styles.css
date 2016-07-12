@@ -49,11 +49,6 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
-    color: black;
-}
-
-p a {
-    text-decoration: underline;
 }
 
 a:hover {
@@ -175,14 +170,23 @@ img {
 }
 
 .design p,
-.design span {
+.design span,
+.design p a {
     position: absolute;
     align-self: flex-start;
-    padding: 30px 0 0 40px;
+    padding: 30px 0 20px 40px;
     left: 0;
     margin-top: 0;
     font-weight: 800;
     font-size: 20px;
+}
+
+.design p a {
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    margin-top: -12px;
 }
 
 .design span {
