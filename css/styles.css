@@ -9,19 +9,19 @@
     transition: all .3s ease-in-out;
     -webkit-touch-callout: none;
     /* iOS Safari */
-    
+
     -webkit-user-select: none;
     /* Chrome/Safari/Opera */
-    
+
     -khtml-user-select: none;
     /* Konqueror */
-    
+
     -moz-user-select: none;
     /* Firefox */
-    
+
     -ms-user-select: none;
     /* Internet Explorer/Edge */
-    
+
     user-select: none;
     cursor: default;
 }
@@ -81,7 +81,7 @@ img {
 .about {
     color: #333;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto;live-s
     font-weight: 600;
     font-size: 15px;
 }
