@@ -44,11 +44,13 @@
 }
 
 #july11,
-#july11 a {
+#july11 a,
+#july19,
+#july19 a {
     color: white;
 }
 
-#july11 {
+#july11,#july19 {
     background-color: #2c3e50;
 }
 
