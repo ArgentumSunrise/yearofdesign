@@ -1,6 +1,6 @@
 @font-face {
-    src: url(../fonts/lato/Lato-Hairline.ttf);
-    font-family: Lato Hairline;
+    src: url(../fonts/lato/Lato-Light.ttf);
+    font-family: Lato Light;
 }
 
 * {
@@ -49,6 +49,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: black;
 }
 
 a:hover {
@@ -74,7 +75,7 @@ img {
 .nav-home {
     height: 100px;
     padding-top: 35px;
-    font-family: Lato Hairline;
+    font-family: Lato Light;
 }
 
 .nav-home,
@@ -82,7 +83,7 @@ img {
     color: #333;
     width: 90%;
     margin: 0 auto;live-s
-    font-weight: 600;
+    font-weight: 800;
     font-size: 15px;
 }
 
